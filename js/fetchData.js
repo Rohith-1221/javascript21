@@ -30,7 +30,14 @@ function other1(t){
     for(let i=0;i<t.length;i++){ 
         var li=document.createElement("li");
         li.textContent=t[i].name;
+        li.setAttribute("class","bg-danger");
         ul.appendChild(li);
+        var li1=document.createElement("li");
+        li1.textContent=t[i].mobile;
+        li1.setAttribute("class","bg-light");
+        ul.appendChild(li1);
     }
-    
 }
+function myfunction(){
+    document.write("Successful");
+    }
